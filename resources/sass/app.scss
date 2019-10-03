@@ -10,6 +10,133 @@
 
 @tailwind base;
 
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */
+        url("../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+        url("../fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */
+        url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+        url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */
+        url("../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+        url("../fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */
+        url("../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+        url("../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/eot/IRANSansWeb(FaNum).eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */
+        url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+        url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+}
+
+@font-face {
+    font-family: YekanBakh;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Yekan/Yekan-Bakh-EN-Regular.woff");
+}
+
+
+body {
+    direction: rtl;
+    font-family: IRANSans;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: IRANSans;
+}
+
 @tailwind components;
 
 @tailwind utilities;
+
+.top-header {
+    background: url(../images/bg/header-repeat.png),
+        url(../images/bg/header-curve.png);
+    background-repeat: no-repeat;
+    background-position: 3%,
+        bottom;
+    padding-bottom: 7rem;
+    /* background-size: initial; */
+}
+
+.nav-bg {
+    background: linear-gradient(180deg, rgba(216, 245, 255, 1) 0%, transparent 98%);
+}
+
+.about-card {
+    margin-top: -5rem;
+}
+
+.shadow-blue {
+    box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
+}
+
+.bg-icon {
+    background: url(../images/icons/rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-register {
+    background: url('../images/login-btn.png');
+    background-position: center;
+}

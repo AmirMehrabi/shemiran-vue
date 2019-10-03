@@ -21,11 +21,12 @@
     <header class="top-header">
         <nav class="flex items-center justify-between flex-wrap py-6 px-24 nav-bg">
             <div class="flex items-center flex-shrink-0 text-white ml-6">
-                <svg class="fill-current  text-blue-500 h-8 w-8 ml-2" width="54" height="54" viewBox="0 0 54 54"
+                <img src="{{asset('images/logo.png')}}" class=" h-16 w-16" alt="">
+                {{-- <svg class="fill-current  text-blue-500 h-8 w-8 ml-2" width="54" height="54" viewBox="0 0 54 54"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-                </svg>
+                </svg> --}}
                 {{-- <span class="font-semibold text-xl tracking-tight  text-blue-500">Tailwind CSS</span> --}}
             </div>
             <div class="block lg:hidden">
@@ -107,7 +108,7 @@
 
     <!--Container-->
     <div class="container mx-auto">
-        <div class="flex flex-col shadow-blue w-2/4 my-auto mt-20 mx-auto py-4 px-8 rounded-lg bg-white about-card">
+        <div class="flex flex-col shadow-blue w-3/5 my-auto mt-20 mx-auto py-4 px-8 rounded-lg bg-white about-card">
             <p class=" mb-2">درباره‌ی پزشک</p>
             <p class="text-gray-600 text-justify text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
@@ -121,9 +122,9 @@
         </div>
 
 
-        <div class="flex flex-row justify-between w-2/4 my-auto mt-20 mx-auto ">
+        <div class="flex flex-row justify-between w-3/5 my-auto mt-20 mx-auto ">
 
-            <div class="rect-icon text-center hover:shadow-xl p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/3.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
@@ -131,7 +132,7 @@
             </div>
 
 
-            <div class="rect-icon text-center hover:shadow-xl p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/4.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
@@ -139,7 +140,7 @@
             </div>
 
 
-            <div class="rect-icon text-center hover:shadow-xl p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/2.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
@@ -147,7 +148,7 @@
             </div>
 
 
-            <div class="rect-icon text-center hover:shadow-xl p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/6.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
@@ -155,7 +156,7 @@
             </div>
 
 
-            <div class="rect-icon text-center hover:shadow-xl p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/7.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>

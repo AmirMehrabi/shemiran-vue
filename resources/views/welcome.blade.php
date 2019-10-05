@@ -10,7 +10,7 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!--Replace with your tailwind.css once created-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
@@ -178,7 +178,7 @@
             <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
                 <p class="text-sm text-blue-normal">مرحله اول</p>
                 <p class="font-bold text-blue-main">انتخاب بخش</p>
-            </div>            
+            </div>
             <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
                 <p>تست</p>
                 <p>تست</p>
@@ -189,31 +189,33 @@
             <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
                 <p class="text-sm text-blue-normal">مرحله دوم</p>
                 <p class="font-bold text-blue-main">زمان حضور در مطب</p>
-            </div>            
+            </div>
             <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
                 <p class="text-blue-normal">لطفا زمان نوبت دلخواه خود را از میان نوبت‌های خالی انتخاب کنید</p>
                 <img src="{{asset('images/nobat.png') }}" class="w-full" alt="">
 
                 <div class="text-center my-6">
-                                    <a href="#"
-                        class="btn-register  text-sm hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">انتخاب نوبت</a>
+                    <a href="#"
+                        class="btn-register  text-sm hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">انتخاب
+                        نوبت</a>
                 </div>
 
             </div>
         </div>
 
-                <div class="flex flex-row w-4/5 my-auto mt-4">
+        <div class="flex flex-row w-4/5 my-auto mt-4">
             <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
                 <p class="text-sm text-blue-normal">مرحله سوم</p>
                 <p class="font-bold text-blue-main">تائید اطلاعات</p>
-            </div>            
+            </div>
             <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
                 <p class="text-blue-normal">مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست</p>
                 <img src="{{asset('images/nobat.png') }}" class="w-full" alt="">
 
                 <div class="text-center my-6">
-                                    <a href="#"
-                        class="btn-register  text-sm hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">انتخاب نوبت</a>
+                    <a href="#"
+                        class="btn-register  text-sm hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">انتخاب
+                        نوبت</a>
                 </div>
 
             </div>

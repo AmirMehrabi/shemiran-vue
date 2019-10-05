@@ -45,7 +45,15 @@ module.exports = {
         },
         extend: {
             colors: {
+                'blue-light': '#e0f4f4',
+                'blue-normal': '#5DBCD2',
                 'blue-main': '#298A96',
+            },
+            borderRadius: {
+                'large': '12px',
+            },
+            boxShadow: {
+                'blue': '0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255)'
             }
         }
     },

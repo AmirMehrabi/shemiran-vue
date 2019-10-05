@@ -10,6 +10,8 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!--Replace with your tailwind.css once created-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
 
@@ -41,39 +43,39 @@
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm mx-auto">
                     <a href="#responsive-header"
-                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-white hover:bg-blue-main ml-6">
+                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-300 hover:shadow transition-all ml-6">
                         خانه
                     </a>
                     <a href="#responsive-header"
-                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-white hover:bg-blue-main ml-6">
+                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-300 hover:shadow transition-all ml-6">
                         خدمات ما
                     </a>
                     <a href="#responsive-header"
-                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-white hover:bg-blue-main ml-6">
+                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-300 hover:shadow transition-all ml-6">
                         اخبار و مقالات
                     </a>
 
                     <a href="#responsive-header"
-                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-white hover:bg-blue-main ml-6">
+                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-300 hover:shadow transition-all ml-6">
                         همایش‌ها
                     </a>
 
                     <a href="#responsive-header"
-                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-white hover:bg-blue-main ml-6">
+                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-300 hover:shadow transition-all ml-6">
                         درباره‌ی ما
                     </a>
 
                     <a href="#responsive-header"
-                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-white hover:bg-blue-main ml-6">
+                        class="block px-3 py-1 rounded lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-300 hover:shadow transition-all ml-6">
                         تماس با ما
                     </a>
                 </div>
                 <div>
                     <a href="#"
-                        class="inline-block text-sm px-4 py-2  text-blue-500 leading-none rounded text-white rounded-lg hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">ورود</a>
+                        class="inline-block text-sm px-4 py-2 hover:shadow text-blue-500 leading-none rounded text-white rounded-lg hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">ورود</a>
 
                     <a href="#"
-                        class="btn-register inline-block text-sm px-4 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">ثبت
+                        class="btn-register inline-block text-sm hover:shadow px-4 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">ثبت
                         نام</a>
                 </div>
             </div>
@@ -124,7 +126,7 @@
 
         <div class="flex flex-row justify-between w-3/5 my-auto mt-20 mx-auto ">
 
-            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-blue transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/3.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
@@ -132,7 +134,7 @@
             </div>
 
 
-            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-blue transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/4.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
@@ -140,7 +142,7 @@
             </div>
 
 
-            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-blue transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/2.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
@@ -148,7 +150,7 @@
             </div>
 
 
-            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-blue transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/6.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
@@ -156,13 +158,65 @@
             </div>
 
 
-            <div class="rect-icon text-center hover:shadow-lg transition-all p-1 rounded w-32">
+            <div class="rect-icon text-center hover:shadow-blue transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
                     <img src="{{asset('images/icons/7.png')}}" class="h-10 mx-auto my-auto" alt="">
                 </div>
                 <p class="text-blue-main font-bold text-sm">پرسش و پاسخ</p>
             </div>
 
+        </div>
+
+
+        <div class="flex flex-col w-3/5 mt-20 mx-auto">
+            <h2 class="text-blue-main font-bold mb-3">دریافت نوبت از دکتر علیرضا شاهدوستی</h2>
+
+        </div>
+
+
+        <div class="flex flex-row w-4/5 my-auto">
+            <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
+                <p class="text-sm text-blue-normal">مرحله اول</p>
+                <p class="font-bold text-blue-main">انتخاب بخش</p>
+            </div>            
+            <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
+                <p>تست</p>
+                <p>تست</p>
+                <p>تست</p>
+            </div>
+        </div>
+        <div class="flex flex-row w-4/5 my-auto mt-4">
+            <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
+                <p class="text-sm text-blue-normal">مرحله دوم</p>
+                <p class="font-bold text-blue-main">زمان حضور در مطب</p>
+            </div>            
+            <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
+                <p class="text-blue-normal">لطفا زمان نوبت دلخواه خود را از میان نوبت‌های خالی انتخاب کنید</p>
+                <img src="{{asset('images/nobat.png') }}" class="w-full" alt="">
+
+                <div class="text-center my-6">
+                                    <a href="#"
+                        class="btn-register  text-sm hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">انتخاب نوبت</a>
+                </div>
+
+            </div>
+        </div>
+
+                <div class="flex flex-row w-4/5 my-auto mt-4">
+            <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
+                <p class="text-sm text-blue-normal">مرحله سوم</p>
+                <p class="font-bold text-blue-main">تائید اطلاعات</p>
+            </div>            
+            <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
+                <p class="text-blue-normal">مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست</p>
+                <img src="{{asset('images/nobat.png') }}" class="w-full" alt="">
+
+                <div class="text-center my-6">
+                                    <a href="#"
+                        class="btn-register  text-sm hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">انتخاب نوبت</a>
+                </div>
+
+            </div>
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

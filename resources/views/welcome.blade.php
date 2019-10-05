@@ -180,9 +180,20 @@
                 <p class="font-bold text-blue-main">انتخاب بخش</p>
             </div>
             <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
-                <p>تست</p>
-                <p>تست</p>
-                <p>تست</p>
+                <div class="flex flex-row items-center">
+                    <div class="flex-1">
+                        <p class="text-blue-normal">لطفاً بخش مورد نظر خود را انتخاب کنید
+                        </p>
+
+                    </div>
+                    <div class="flex-1 text-left">
+                        <select name="" id=""
+                            class="bg-white px-2 rounded w-48 irsans focus:outline-none border border-transparent active:border-gray-300">
+                            <option value="" class="bg-white">انتخاب بخش</option>
+                            <option value="" class="bg-white">بخش قلب</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="flex flex-row w-4/5 my-auto mt-4">
@@ -209,9 +220,40 @@
                 <p class="font-bold text-blue-main">تائید اطلاعات</p>
             </div>
             <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
-                <p class="text-blue-normal">مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست</p>
-                <img src="{{asset('images/nobat.png') }}" class="w-full" alt="">
+                <p class="text-blue-normal mb-4">مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست</p>
+                <div class="flex flex-row ">
+                    <div class="flex-1">
+                        <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">تاریخ نوبت
+                            <span class="font-bold text-base text-blue-main mr-4">دوشنبه ۲۵ شهریور ۱۳۹۸</span>
+                        </p>
 
+                        <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">ساعت مراجعه 
+                            <span class="font-bold text-base text-blue-main mr-4">۱۶:۳۰ بعد از ظهر</span>
+                        </p>
+
+                        <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">نام پزشک
+                            <span class="font-bold text-base text-blue-main mr-4">دکتر علیرضا بخشی - قلب و عروق</span>
+                        </p>
+
+                    </div>
+                    <div class="flex-1 bg-gray-200">
+                        <p class="text-blue-normal text-sm  inline-block py-1 mb-3">هزینه‌ی قابل پرداخت
+                            <span class="font-bold text-base text-blue-main mr-4">۲۵۰،۰۰۰ ریال</span>
+                        </p>
+
+                        <p class="text-blue-normal text-sm  inline-block py-1 mb-3">به صورت اینترنتی پرداخت می‌کنم
+                            <span class="font-bold text-base text-blue-main mr-4">
+<div class="mb-2">                
+    <div class="form-switch inline-block align-middle">
+        <input type="checkbox" name="1" id="1" class="form-switch-checkbox" />
+        <label class="form-switch-label" for="1"></label>
+    </div>
+    <label class="text-xs text-grey-dark" for="1">Default</label>
+</div>
+                            </span>
+                        </p>
+                    </div>
+                </div>
                 <div class="text-center my-6">
                     <a href="#"
                         class="btn-register  text-sm hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">انتخاب

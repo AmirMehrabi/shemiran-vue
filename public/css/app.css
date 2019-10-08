@@ -11884,6 +11884,17 @@ h6 {
   will-change: transform;
 }
 
+.toggle__dot {
+  top: -.25rem;
+  left: -.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked ~ .toggle__dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
 .top-header {
   background: url(../images/bg/header-repeat.png), url(../images/bg/header-curve.png);
   background-repeat: no-repeat;
@@ -11893,7 +11904,7 @@ h6 {
 }
 
 .irsans {
-  font-family: "IRANSans";
+  font-family: 'IRANSans';
 }
 
 .nav-bg {

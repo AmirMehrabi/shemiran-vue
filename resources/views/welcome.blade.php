@@ -220,14 +220,15 @@
                 <p class="font-bold text-blue-main">تائید اطلاعات</p>
             </div>
             <div class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft">
-                <p class="text-blue-normal mb-4">مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست</p>
+                <p class="text-blue-normal mb-4">مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست
+                </p>
                 <div class="flex flex-row ">
                     <div class="flex-1">
                         <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">تاریخ نوبت
                             <span class="font-bold text-base text-blue-main mr-4">دوشنبه ۲۵ شهریور ۱۳۹۸</span>
                         </p>
 
-                        <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">ساعت مراجعه 
+                        <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">ساعت مراجعه
                             <span class="font-bold text-base text-blue-main mr-4">۱۶:۳۰ بعد از ظهر</span>
                         </p>
 
@@ -241,17 +242,33 @@
                             <span class="font-bold text-base text-blue-main mr-4">۲۵۰،۰۰۰ ریال</span>
                         </p>
 
-                        <p class="text-blue-normal text-sm  inline-block py-1 mb-3">به صورت اینترنتی پرداخت می‌کنم
-                            <span class="font-bold text-base text-blue-main mr-4">
-<div class="mb-2">                
-    <div class="form-switch inline-block align-middle">
-        <input type="checkbox" name="1" id="1" class="form-switch-checkbox" />
-        <label class="form-switch-label" for="1"></label>
-    </div>
-    <label class="text-xs text-grey-dark" for="1">Default</label>
-</div>
-                            </span>
-                        </p>
+
+                        <div class="flex items-center justify-center w-full">
+
+                            <!-- Toggle Button -->
+                            <label for="toogleA" class="flex items-center cursor-pointer">
+                                <p class="text-blue-normal text-sm  inline-block py-1 mb-3">به صورت اینترنتی پرداخت
+                                    می‌کنم
+
+                                </p>
+                                <!-- toggle -->
+                                <div class="relative">
+                                    <!-- input -->
+                                    <input id="toogleA" type="checkbox" class="hidden" />
+                                    <!-- line -->
+                                    <div class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+                                    <!-- dot -->
+                                    <div
+                                        class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                    </div>
+                                </div>
+                                <!-- label -->
+                                <div class="ml-3 text-gray-700 font-medium">
+
+                                </div>
+                            </label>
+
+                        </div>
                     </div>
                 </div>
                 <div class="text-center my-6">

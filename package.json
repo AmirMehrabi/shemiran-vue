@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "tailwindcss": "^1.1.2",
+        "tailwindcss-toggle": "github:TowelSoftware/tailwindcss-toggle",
         "tailwindcss-transitions": "^2.1.0"
     }
 }

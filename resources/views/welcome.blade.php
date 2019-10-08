@@ -126,6 +126,8 @@
         </div>
 
 
+        
+
         <div class="flex flex-row justify-between w-3/5 my-auto mt-20 mx-auto ">
 
             <div class="rect-icon text-center hover:shadow-blue transition-all p-1 rounded w-32">
@@ -198,6 +200,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="flex flex-row w-4/5 my-auto mt-4">
             <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
                 <p class="text-sm text-blue-normal">مرحله دوم</p>

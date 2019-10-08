@@ -86,11 +86,13 @@
 
 
         <div class="flex flex-col w-1/4 my-auto mt-20 mx-auto">
-            <div class="text-blue-main text-center  py-1">
-                <h1 class="text-2xl">اطلاعات پزشک</h1>
+            <div class="flex items-center justify-between text-blue-main text-center  py-1">
+                <img src="{{asset('images/heartbeat.png')}}" alt="">
+                <h1 class="text-2xl text-center">اطلاعات پزشک</h1>
+                <img src="{{asset('images/heartbeat.png')}}" alt="">
             </div>
             <div class="text-blue-main text-center py-1 pb-3 border-b-2">
-                <p>نوبت‌دهی از بهترین پزشکان سامانه جامعه</p>
+                <p>نوبت‌دهی از بهترین پزشکان سامانه جامع</p>
             </div>
             <div class="text-blue-main text-center  py-1">
                 <div class="flex flex-row items-center">
@@ -98,9 +100,11 @@
                         <img src="{{asset('images/avatar.png')}}" alt="">
                     </div>
                     <div class="text-blue-main text-center m-2 text-right">
-                        <h2 class=" font-bold">دکتر علیرضا شاه‌دوستی</h2>
-                        <p class="font-light text-sm text-gray-600">متخصص و جراح بیماری‌های چشم</p>
+                        <h2 class="flex items-center font-bold"><img class="ml-1" src="{{asset('images/verified.png')}}" alt=""> دکتر علیرضا شاه‌دوستی</h2>
+                        <div class="mr-5">
+                                                    <p class="font-light text-sm text-gray-600">متخصص و جراح بیماری‌های چشم</p>
                         <p class="font-light text-sm text-gray-600">کد نظام پزشکی: ۹۷۱۲۴۵</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +117,9 @@
     <!--Container-->
     <div class="container mx-auto">
         <div class="flex flex-col shadow-blue w-3/5 my-auto mt-20 mx-auto py-4 px-8 rounded-lg bg-white about-card">
-            <p class=" mb-2">درباره‌ی پزشک</p>
+            <p class="flex text-blue-heading font-bold items-center mb-2">
+                <img src="{{asset('images/about-doctor.png')}}" class="ml-2" alt="">
+                درباره‌ی پزشک</p>
             <p class="text-gray-600 text-justify text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
                 شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
@@ -132,7 +138,7 @@
 
             <div class="rect-icon text-center hover:shadow-blue transition-all p-1 rounded w-32">
                 <div class="bg-icon flex p-6 items-center">
-                    <img src="{{asset('images/icons/3.png')}}" class="h-10 mx-auto my-auto" alt="">
+                    <img src="{{asset('images/icons/3.png')}}" class="h-10 mx-auto my-auto " alt="">
                 </div>
                 <p class="text-blue-main font-bold text-sm">دریافت نوبت</p>
             </div>
@@ -173,7 +179,10 @@
 
 
         <div class="flex flex-col w-3/5 mt-20 mx-auto">
-            <h2 class="text-blue-main font-bold mb-3">دریافت نوبت از دکتر علیرضا شاهدوستی</h2>
+            <h2 class="flex items-center text-blue-heading font-bold mb-4">
+                <img src="{{asset('images/about-doctor.png')}}" class="ml-2" alt="">
+                 دریافت نوبت از دکتر علیرضا شاهدوستی
+            </h2>
 
         </div>
 

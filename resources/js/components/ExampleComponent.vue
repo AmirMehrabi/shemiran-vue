@@ -1,7 +1,14 @@
 <template>
   <div>
     <div class="flex flex-row w-4/5 my-auto" v-if="step >= 1">
-      <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
+      <div class="text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight">
+        <div v-if="step === 1">
+          <img src="images/bg-current.png" class="absolute bg-white w-4 stage-bg" alt />
+        </div>
+        <div v-else>
+          <img src="images/bg-disabled.png" class="absolute bg-white w-4 stage-bg" alt />
+        </div>
+
         <p class="text-sm text-blue-normal">مرحله اول</p>
         <p class="font-bold text-blue-main">انتخاب بخش</p>
       </div>
@@ -10,7 +17,10 @@
       >
         <div class="flex flex-row items-center">
           <div class="flex-1">
-            <p class="text-blue-normal">لطفاً بخش مورد نظر خود را انتخاب کنید</p>
+            <p class="flex items-center text-blue-normal">
+              <img src="images/arrow-left.png" class="ml-2" alt />
+              لطفاً بخش مورد نظر خود را انتخاب کنید
+            </p>
           </div>
           <div class="flex-1 text-left">
             <select
@@ -30,21 +40,30 @@
 
     <!-- Second part -->
     <div class="flex flex-row w-4/5 my-auto mt-4" v-if="step >= 2">
-      <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
+      <div class="text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight">
+        <div v-if="step === 2">
+          <img src="images/bg-current.png" class="absolute bg-white w-4 stage-bg" alt />
+        </div>
+        <div v-else>
+          <img src="images/bg-disabled.png" class="absolute bg-white w-4 stage-bg" alt />
+        </div>
         <p class="text-sm text-blue-normal">مرحله دوم</p>
         <p class="font-bold text-blue-main">زمان حضور در مطب</p>
       </div>
       <div
         class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
       >
-        <p class="text-blue-normal">لطفا زمان نوبت دلخواه خود را از میان نوبت‌های خالی انتخاب کنید</p>
+        <p class="flex items-center text-blue-normal">
+          <img src="images/arrow-left.png" class="ml-2" alt />
+          لطفا زمان نوبت دلخواه خود را از میان نوبت‌های خالی انتخاب کنید
+        </p>
         <img src="images/nobat.png" class="w-full" alt />
 
         <div class="text-center my-6">
           <button
             @click.prevent="next()"
             :disabled="step != 2"
-            class="btn-register irsans text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
+            class="btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
           >
             انتخاب
             نوبت
@@ -56,34 +75,52 @@
     <!-- Third part -->
 
     <div class="flex flex-row w-4/5 my-auto mt-4" v-if="step >= 3">
-      <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
+      <div class="text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight">
+        <div v-if="step === 3">
+          <img src="images/bg-current.png" class="absolute bg-white w-4 stage-bg" alt />
+        </div>
+        <div v-else>
+          <img src="images/bg-disabled.png" class="absolute bg-white w-4 stage-bg" alt />
+        </div>
         <p class="text-sm text-blue-normal">مرحله سوم</p>
         <p class="font-bold text-blue-main">تائید اطلاعات</p>
       </div>
       <div
         class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
       >
-        <p
-          class="text-blue-normal mb-4"
-        >مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست</p>
+        <p class="flex items-center text-blue-normal mb-4">
+          <img src="images/arrow-left.png" class="ml-2" alt />
+          مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست
+        </p>
         <div class="flex flex-row">
           <div class="flex-1">
-            <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">
-              تاریخ نوبت
-              <span class="font-bold text-base text-blue-main mr-4">دوشنبه ۲۵ شهریور ۱۳۹۸</span>
-            </p>
+            <div class="flex items-center mb-3">
+              <img src="images/calendar.png" class="bg-white w-4 ml-2" alt />
+              <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1">
+                تاریخ نوبت
+                <span
+                  class="font-bold text-base text-blue-main mr-4"
+                >دوشنبه ۲۲ شهریور ۱۳۹۸</span>
+              </p>
+            </div>
 
-            <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">
-              ساعت مراجعه
-              <span class="font-bold text-base text-blue-main mr-4">۱۶:۳۰ بعد از ظهر</span>
-            </p>
+            <div class="flex items-center mb-3">
+              <img src="images/time.png" class="bg-white w-4 ml-2" alt />
+              <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1">
+                ساعت مراجعه
+                <span class="font-bold text-base text-blue-main mr-4">۱۶:۳۰ بعد از ظهر</span>
+              </p>
+            </div>
 
-            <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3">
-              نام پزشک
-              <span
-                class="font-bold text-base text-blue-main mr-4"
-              >دکتر علیرضا بخشی - {{ selected }}</span>
-            </p>
+            <div class="flex items-center mb-3">
+              <img src="images/doctor.png" class="bg-white w-4 ml-2" alt />
+              <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1">
+                نام پزشک
+                <span
+                  class="font-bold text-base text-blue-main mr-4"
+                >دکتر علیرضا بخشی / {{ selected }}</span>
+              </p>
+            </div>
           </div>
           <div class="flex-1">
             <p class="text-blue-normal text-sm inline-block py-1 mb-3">
@@ -125,7 +162,7 @@
           <button
             @click.prevent="next()"
             :disabled="step != 3"
-            class="btn-register irsans text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
+            class="btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
           >
             ثبت
             نهایی و پرداخت
@@ -199,6 +236,9 @@ export default {
   },
   components: {
     "v-select": vSelect
+  },
+  updated() {
+    console.log("test");
   }
 };
 </script>

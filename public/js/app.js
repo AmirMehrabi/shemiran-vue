@@ -2002,6 +2002,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2039,6 +2076,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   components: {
     "v-select": vue_select__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
+  updated: function updated() {
+    console.log("test");
   }
 });
 
@@ -37341,7 +37381,36 @@ var render = function() {
   return _c("div", [
     _vm.step >= 1
       ? _c("div", { staticClass: "flex flex-row w-4/5 my-auto" }, [
-          _vm._m(0),
+          _c(
+            "div",
+            {
+              staticClass:
+                "text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight"
+            },
+            [
+              _vm.step === 1
+                ? _c("div", [
+                    _c("img", {
+                      staticClass: "absolute bg-white w-4 stage-bg",
+                      attrs: { src: "images/bg-current.png", alt: "" }
+                    })
+                  ])
+                : _c("div", [
+                    _c("img", {
+                      staticClass: "absolute bg-white w-4 stage-bg",
+                      attrs: { src: "images/bg-disabled.png", alt: "" }
+                    })
+                  ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-sm text-blue-normal" }, [
+                _vm._v("مرحله اول")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "font-bold text-blue-main" }, [
+                _vm._v("انتخاب بخش")
+              ])
+            ]
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -37351,7 +37420,7 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "flex flex-row items-center" }, [
-                _vm._m(1),
+                _vm._m(0),
                 _vm._v(" "),
                 _c("div", { staticClass: "flex-1 text-left" }, [
                   _c(
@@ -37412,7 +37481,36 @@ var render = function() {
     _vm._v(" "),
     _vm.step >= 2
       ? _c("div", { staticClass: "flex flex-row w-4/5 my-auto mt-4" }, [
-          _vm._m(2),
+          _c(
+            "div",
+            {
+              staticClass:
+                "text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight"
+            },
+            [
+              _vm.step === 2
+                ? _c("div", [
+                    _c("img", {
+                      staticClass: "absolute bg-white w-4 stage-bg",
+                      attrs: { src: "images/bg-current.png", alt: "" }
+                    })
+                  ])
+                : _c("div", [
+                    _c("img", {
+                      staticClass: "absolute bg-white w-4 stage-bg",
+                      attrs: { src: "images/bg-disabled.png", alt: "" }
+                    })
+                  ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-sm text-blue-normal" }, [
+                _vm._v("مرحله دوم")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "font-bold text-blue-main" }, [
+                _vm._v("زمان حضور در مطب")
+              ])
+            ]
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -37421,11 +37519,7 @@ var render = function() {
                 "w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
             },
             [
-              _c("p", { staticClass: "text-blue-normal" }, [
-                _vm._v(
-                  "لطفا زمان نوبت دلخواه خود را از میان نوبت‌های خالی انتخاب کنید"
-                )
-              ]),
+              _vm._m(1),
               _vm._v(" "),
               _c("img", {
                 staticClass: "w-full",
@@ -37437,7 +37531,7 @@ var render = function() {
                   "button",
                   {
                     staticClass:
-                      "btn-register irsans text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
+                      "btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
                     attrs: { disabled: _vm.step != 2 },
                     on: {
                       click: function($event) {
@@ -37456,7 +37550,36 @@ var render = function() {
     _vm._v(" "),
     _vm.step >= 3
       ? _c("div", { staticClass: "flex flex-row w-4/5 my-auto mt-4" }, [
-          _vm._m(3),
+          _c(
+            "div",
+            {
+              staticClass:
+                "text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight"
+            },
+            [
+              _vm.step === 3
+                ? _c("div", [
+                    _c("img", {
+                      staticClass: "absolute bg-white w-4 stage-bg",
+                      attrs: { src: "images/bg-current.png", alt: "" }
+                    })
+                  ])
+                : _c("div", [
+                    _c("img", {
+                      staticClass: "absolute bg-white w-4 stage-bg",
+                      attrs: { src: "images/bg-disabled.png", alt: "" }
+                    })
+                  ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-sm text-blue-normal" }, [
+                _vm._v("مرحله سوم")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "font-bold text-blue-main" }, [
+                _vm._v("تائید اطلاعات")
+              ])
+            ]
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -37465,38 +37588,42 @@ var render = function() {
                 "w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
             },
             [
-              _c("p", { staticClass: "text-blue-normal mb-4" }, [
-                _vm._v(
-                  "مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست"
-                )
-              ]),
+              _vm._m(2),
               _vm._v(" "),
               _c("div", { staticClass: "flex flex-row" }, [
                 _c("div", { staticClass: "flex-1" }, [
+                  _vm._m(3),
+                  _vm._v(" "),
                   _vm._m(4),
                   _vm._v(" "),
-                  _vm._m(5),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
-                    },
-                    [
-                      _vm._v("\n            نام پزشک\n            "),
-                      _c(
-                        "span",
-                        {
-                          staticClass: "font-bold text-base text-blue-main mr-4"
-                        },
-                        [_vm._v("دکتر علیرضا بخشی - " + _vm._s(_vm.selected))]
-                      )
-                    ]
-                  )
+                  _c("div", { staticClass: "flex items-center mb-3" }, [
+                    _c("img", {
+                      staticClass: "bg-white w-4 ml-2",
+                      attrs: { src: "images/doctor.png", alt: "" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      {
+                        staticClass:
+                          "text-blue-normal text-sm border-b border-gray-400 inline-block py-1"
+                      },
+                      [
+                        _vm._v("\n              نام پزشک\n              "),
+                        _c(
+                          "span",
+                          {
+                            staticClass:
+                              "font-bold text-base text-blue-main mr-4"
+                          },
+                          [_vm._v("دکتر علیرضا بخشی / " + _vm._s(_vm.selected))]
+                        )
+                      ]
+                    )
+                  ])
                 ]),
                 _vm._v(" "),
-                _vm._m(6)
+                _vm._m(5)
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "text-center my-6" }, [
@@ -37504,7 +37631,7 @@ var render = function() {
                   "button",
                   {
                     staticClass:
-                      "btn-register irsans text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
+                      "btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
                     attrs: { disabled: _vm.step != 3 },
                     on: {
                       click: function($event) {
@@ -37525,7 +37652,7 @@ var render = function() {
         ])
       : _vm._e(),
     _vm._v(" "),
-    _vm.step >= 4 ? _c("div", [_vm._m(7), _vm._v(" "), _vm._m(8)]) : _vm._e()
+    _vm.step >= 4 ? _c("div", [_vm._m(6), _vm._v(" "), _vm._m(7)]) : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -37533,30 +37660,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight"
-      },
-      [
-        _c("p", { staticClass: "text-sm text-blue-normal" }, [
-          _vm._v("مرحله اول")
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "font-bold text-blue-main" }, [
-          _vm._v("انتخاب بخش")
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex-1" }, [
-      _c("p", { staticClass: "text-blue-normal" }, [
-        _vm._v("لطفاً بخش مورد نظر خود را انتخاب کنید")
+      _c("p", { staticClass: "flex items-center text-blue-normal" }, [
+        _c("img", {
+          staticClass: "ml-2",
+          attrs: { src: "images/arrow-left.png", alt: "" }
+        }),
+        _vm._v(
+          "\n            لطفاً بخش مورد نظر خود را انتخاب کنید\n          "
+        )
       ])
     ])
   },
@@ -37564,79 +37676,83 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight"
-      },
-      [
-        _c("p", { staticClass: "text-sm text-blue-normal" }, [
-          _vm._v("مرحله دوم")
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "font-bold text-blue-main" }, [
-          _vm._v("زمان حضور در مطب")
-        ])
-      ]
-    )
+    return _c("p", { staticClass: "flex items-center text-blue-normal" }, [
+      _c("img", {
+        staticClass: "ml-2",
+        attrs: { src: "images/arrow-left.png", alt: "" }
+      }),
+      _vm._v(
+        "\n        لطفا زمان نوبت دلخواه خود را از میان نوبت‌های خالی انتخاب کنید\n      "
+      )
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight"
-      },
-      [
-        _c("p", { staticClass: "text-sm text-blue-normal" }, [
-          _vm._v("مرحله سوم")
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "font-bold text-blue-main" }, [
-          _vm._v("تائید اطلاعات")
-        ])
-      ]
-    )
+    return _c("p", { staticClass: "flex items-center text-blue-normal mb-4" }, [
+      _c("img", {
+        staticClass: "ml-2",
+        attrs: { src: "images/arrow-left.png", alt: "" }
+      }),
+      _vm._v(
+        "\n        مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست\n      "
+      )
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "p",
-      {
-        staticClass:
-          "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
-      },
-      [
-        _vm._v("\n            تاریخ نوبت\n            "),
-        _c("span", { staticClass: "font-bold text-base text-blue-main mr-4" }, [
-          _vm._v("دوشنبه ۲۵ شهریور ۱۳۹۸")
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "flex items-center mb-3" }, [
+      _c("img", {
+        staticClass: "bg-white w-4 ml-2",
+        attrs: { src: "images/calendar.png", alt: "" }
+      }),
+      _vm._v(" "),
+      _c(
+        "p",
+        {
+          staticClass:
+            "text-blue-normal text-sm border-b border-gray-400 inline-block py-1"
+        },
+        [
+          _vm._v("\n              تاریخ نوبت\n              "),
+          _c(
+            "span",
+            { staticClass: "font-bold text-base text-blue-main mr-4" },
+            [_vm._v("دوشنبه ۲۲ شهریور ۱۳۹۸")]
+          )
+        ]
+      )
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "p",
-      {
-        staticClass:
-          "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
-      },
-      [
-        _vm._v("\n            ساعت مراجعه\n            "),
-        _c("span", { staticClass: "font-bold text-base text-blue-main mr-4" }, [
-          _vm._v("۱۶:۳۰ بعد از ظهر")
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "flex items-center mb-3" }, [
+      _c("img", {
+        staticClass: "bg-white w-4 ml-2",
+        attrs: { src: "images/time.png", alt: "" }
+      }),
+      _vm._v(" "),
+      _c(
+        "p",
+        {
+          staticClass:
+            "text-blue-normal text-sm border-b border-gray-400 inline-block py-1"
+        },
+        [
+          _vm._v("\n              ساعت مراجعه\n              "),
+          _c(
+            "span",
+            { staticClass: "font-bold text-base text-blue-main mr-4" },
+            [_vm._v("۱۶:۳۰ بعد از ظهر")]
+          )
+        ]
+      )
+    ])
   },
   function() {
     var _vm = this

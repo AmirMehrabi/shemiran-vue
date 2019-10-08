@@ -48,6 +48,7 @@ module.exports = {
                 'blue-light': '#e0f4f4',
                 'blue-normal': '#5DBCD2',
                 'blue-main': '#298A96',
+                'blue-heading': '#0B6A80',
             },
             borderRadius: {
                 'large': '12px',

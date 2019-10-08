@@ -319,6 +319,8 @@
 
     </footer>
 
+    <example-component></example-component>
+
     <script type="text/javascript" src="js/app.js"></script>
     <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@4"></script>

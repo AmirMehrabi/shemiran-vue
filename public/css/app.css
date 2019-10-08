@@ -10027,6 +10027,10 @@ h6 {
   box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
 }
 
+.shadow-blue-lg {
+  box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+}
+
 .hover\:shadow:hover {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -10063,6 +10067,10 @@ h6 {
   box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
 }
 
+.hover\:shadow-blue-lg:hover {
+  box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+}
+
 .focus\:shadow:focus {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -10097,6 +10105,10 @@ h6 {
 
 .focus\:shadow-blue:focus {
   box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
+}
+
+.focus\:shadow-blue-lg:focus {
+  box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
 }
 
 .fill-current {
@@ -11892,7 +11904,7 @@ h6 {
 
 input:checked ~ .toggle__dot {
   transform: translateX(100%);
-  background-color: #48bb78;
+  background-color: #298A96;
 }
 
 .top-header {
@@ -21238,6 +21250,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
   }
 
+  .sm\:shadow-blue-lg {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
   .sm\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -21274,6 +21290,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
   }
 
+  .sm\:hover\:shadow-blue-lg:hover {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
   .sm\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -21308,6 +21328,10 @@ input:checked ~ .toggle__dot {
 
   .sm\:focus\:shadow-blue:focus {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
+  }
+
+  .sm\:focus\:shadow-blue-lg:focus {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
   .sm\:fill-current {
@@ -32402,6 +32426,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
   }
 
+  .md\:shadow-blue-lg {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
   .md\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -32438,6 +32466,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
   }
 
+  .md\:hover\:shadow-blue-lg:hover {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
   .md\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -32472,6 +32504,10 @@ input:checked ~ .toggle__dot {
 
   .md\:focus\:shadow-blue:focus {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
+  }
+
+  .md\:focus\:shadow-blue-lg:focus {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
   .md\:fill-current {
@@ -43566,6 +43602,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
   }
 
+  .lg\:shadow-blue-lg {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
   .lg\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -43602,6 +43642,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
   }
 
+  .lg\:hover\:shadow-blue-lg:hover {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
   .lg\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -43636,6 +43680,10 @@ input:checked ~ .toggle__dot {
 
   .lg\:focus\:shadow-blue:focus {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
+  }
+
+  .lg\:focus\:shadow-blue-lg:focus {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
   .lg\:fill-current {
@@ -54730,6 +54778,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
   }
 
+  .xl\:shadow-blue-lg {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
   .xl\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -54766,6 +54818,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
   }
 
+  .xl\:hover\:shadow-blue-lg:hover {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
   .xl\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -54800,6 +54856,10 @@ input:checked ~ .toggle__dot {
 
   .xl\:focus\:shadow-blue:focus {
     box-shadow: 0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255);
+  }
+
+  .xl\:focus\:shadow-blue-lg:focus {
+    box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
   .xl\:fill-current {

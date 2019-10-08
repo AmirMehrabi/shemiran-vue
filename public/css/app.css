@@ -12004,11 +12004,11 @@ input:checked ~ .toggle__dot {
 }
 
 .bottom-footer {
-  background: url(../images/bg/header-repeat.png), url(../images/bg/footer-curve.png);
+  background: url(../images/bg/footer-curved.png);
   background-repeat: no-repeat;
-  background-position: 3%, top;
-  padding-top: 5rem;
-  /* background-size: initial; */
+  background-position: left;
+  padding-top: 7rem;
+  background-size: cover;
 }
 
 .irsans {

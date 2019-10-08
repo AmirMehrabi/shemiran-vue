@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="font-sans leading-normal tracking-normal">
+<body class="font-sans leading-normal tracking-normal" id="app">
 
     <!--Header-->
     <header class="top-header">
@@ -273,33 +273,38 @@
 
 
                         <p class="font-bold text-blue-normal text-sm mt-6">توصیه‌های پیش از حضور در مرکز:</p>
-                        <p class="text-gray-600 text-xs">در زمان مراجعه حتما شماره پیگیری نوبت را به همراه داشته باشید</p>
+                        <p class="text-gray-600 text-xs">در زمان مراجعه حتما شماره پیگیری نوبت را به همراه داشته باشید
+                        </p>
                         <p class="text-gray-600 text-xs">در صورت عدم مراجعه در زمان مقرر، نوبت شما لغو خواهد شد</p>
 
 
-                        
+
                     </div>
-                    
+
                 </div>
                 <div class="text-center my-6">
                     <a href="#"
-                        class="btn-register  text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">ثبت نهایی و پرداخت</a>
+                        class="btn-register  text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-10 py-2 leading-none  text-white  bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">ثبت
+                        نهایی و پرداخت</a>
                 </div>
 
             </div>
 
-            
+
         </div>
 
 
         <div>
-            <div class="flex flex-col w-3/5 mt-20 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full">
-                <p>روزبه بمانی عزیز، نوبت شما با موفقیت در سامانه نوبت دهی ثبت شد. جهت ویرایش آن می‌توانید به قسمت <span class="text-red-700 hover:text-red-800"><a href="#">نوبت‌های من</a></span> در پروفایل خود مراجعه کنید.</p>
+            <div
+                class="flex flex-col w-3/5 mt-20 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full">
+                <p>روزبه بمانی عزیز، نوبت شما با موفقیت در سامانه نوبت دهی ثبت شد. جهت ویرایش آن می‌توانید به قسمت <span
+                        class="text-red-700 hover:text-red-800"><a href="#">نوبت‌های من</a></span> در پروفایل خود مراجعه
+                    کنید.</p>
             </div>
             <div class="text-center">
-                        <p class="text-blue-normal text-xs border-b border-gray-400 inline-block py-1 mb-3">شماره‌ی پیگیری
-                            <span class="font-bold text-xs text-blue-main mr-4">۹۷۱۳۱۰۹۸</span>
-                        </p>
+                <p class="text-blue-normal text-xs border-b border-gray-400 inline-block py-1 mb-3">شماره‌ی پیگیری
+                    <span class="font-bold text-xs text-blue-main mr-4">۹۷۱۳۱۰۹۸</span>
+                </p>
             </div>
         </div>
 

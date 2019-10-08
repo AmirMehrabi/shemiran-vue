@@ -209,17 +209,17 @@
 
 
             {{-- Our vue component for reservation goes here --}}
-            <example-component></example-component>
+            <reserve-component></reserve-component>
             {{-- End of component --}}
 
         </div>
 
 
         {{-- Footer goes here --}}
-        <footer class="bottom-footer mt-20  justify-between">
+        <footer class="bottom-footer mt-20  justify-between text-sm">
             <div class="container mx-auto">
                 <div class="flex flex-row justify-between">
-                    <div class="text-blue-normal text-center  px-4 py-2 m-2">
+                    <div class="text-blue-normal  px-4 py-2 m-2">
                         <img src="images/logo.png" class="w-24" alt="">
                         <p class="my-3">سامانه‌ی جامع، بستری مناسب جهت پیشگیری، کنترل و درمان بیماری</p>
 
@@ -239,74 +239,74 @@
                         </div>
                     </div>
                     <div class="text-gray-700  text-right px-4 py-2 m-2">
-                        <h3 class="text-lg font-bold text-blue-heading mb-5">خدمات</h3>
+                        <h3 class="text-base font-bold text-blue-heading mb-5">خدمات</h3>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700 mb-2">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500 mb-2">
                             <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
                             نوبت‌دهی آنلاین
                         </a>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700 mb-2">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500 mb-2">
                             <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
                             دریافت رژیم غذایی
                         </a>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700 mb-2">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500 mb-2">
                             <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
                             پرسش و پاسخ از پزشک
                         </a>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700 mb-2">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500 mb-2">
                             <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
                             دوره‌های آموزشی ویژه
                         </a>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500">
                             <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
                             خرید اشتراک ویژه
                         </a>
                     </div>
                     <div class="text-gray-700  text-right px-4 py-2 m-2">
-                        <h3 class="text-lg font-bold text-blue-heading mb-5">صفحات مفید</h3>
+                        <h3 class="text-base font-bold text-blue-heading mb-5">صفحات مفید</h3>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700 mb-2">
-                            <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500 mb-2">
+                            <img src="images/arrow-left.png" class="ml-1 w-1" alt="">
                             خانه
                         </a>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700 mb-2">
-                            <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500 mb-2">
+                            <img src="images/arrow-left.png" class="ml-1 w-1" alt="">
                             لیست پزشکان
                         </a>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700 mb-2">
-                            <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500 mb-2">
+                            <img src="images/arrow-left.png" class="ml-1 w-1" alt="">
                             اخبار و مقالات
                         </a>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700 mb-2">
-                            <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500 mb-2">
+                            <img src="images/arrow-left.png" class="ml-1 w-1" alt="">
                             همایش‌ها
                         </a>
 
-                        <a href="#" class="flex items-center irsans py-1 text-gray-700">
-                            <img src="images/doctor-2.png" class="ml-1 w-5" alt="">
+                        <a href="#" class="flex items-center irsans py-1 text-gray-700 hover:text-gray-500">
+                            <img src="images/arrow-left.png" class="ml-1 w-1" alt="">
                             درباره‌ی ما
                         </a>
                     </div>
                     <div class=" text-gray-700  text-right px-4 py-2 m-2">
-                        <h3 class="text-lg font-bold text-blue-heading mb-5">صفحات مفید</h3>
+                        <h3 class="text-base font-bold text-blue-heading mb-5">شبکه‌های اجتماعی</h3>
                         <div class="flex items-center text-center justify-between">
-                            <a href="#">
-                                <img src="{{asset('images/facebook.png')}}" class="ml-1 w-5" alt="">
+                            <a href="#" class="hover:shadow">
+                                <img src="{{asset('images/facebook.png')}}" class=" w-5" alt="">
                             </a>
 
-                            <a href="#">
-                                <img src="{{asset('images/instagram.png')}}" class="ml-1 w-5" alt="">
+                            <a href="#" class="hover:shadow">
+                                <img src="{{asset('images/instagram.png')}}" class=" w-5" alt="">
                             </a>
 
-                            <a href="#">
-                                <img src="{{asset('images/twitter.png')}}" class="ml-1 w-5" alt="">
+                            <a href="#" class="hover:shadow">
+                                <img src="{{asset('images/twitter.png')}}" class=" w-5" alt="">
                             </a>
 
 

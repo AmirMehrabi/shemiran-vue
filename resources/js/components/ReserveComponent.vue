@@ -139,7 +139,13 @@
                 <!-- toggle -->
                 <div class="relative">
                   <!-- input -->
-                  <input id="toogleA" v-model="onlinePayment" type="checkbox" class="hidden" />
+                  <input
+                    id="toogleA"
+                    v-model="onlinePayment"
+                    type="checkbox"
+                    class="hidden"
+                    :disabled="step === 4"
+                  />
                   <!-- line -->
                   <div class="toggle__line w-10 h-4 rounded-full bg-white shadow-blue-main"></div>
                   <!-- dot -->
@@ -161,15 +167,28 @@
           </div>
         </div>
         <div class="text-center my-6">
-          <button
-            @click.prevent="next()"
-            :disabled="step != 3"
-            class="flex items-center mx-auto btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-4 md:px-10 lg:px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
-          >
-            <img src="images/checked.png" class="ml-4" alt />
-            ثبت
-            نهایی و پرداخت
-          </button>
+          <div v-if="onlinePayment">
+            <button
+              @click.prevent="next()"
+              :disabled="step != 3"
+              class="flex items-center mx-auto btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-4 md:px-10 lg:px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
+            >
+              <img src="images/checked.png" class="ml-4" alt />
+              ثبت
+              نهایی و پرداخت
+            </button>
+          </div>
+          <div v-else>
+            <button
+              @click.prevent="next()"
+              :disabled="step != 3"
+              class="flex items-center mx-auto btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-4 md:px-10 lg:px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
+            >
+              <img src="images/checked.png" class="ml-4" alt />
+              ثبت
+              نهایی
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -292,9 +292,18 @@
         </div>
 
 
-        <div class="flex flex-col w-3/5 mt-20 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full">
-            <p>روزبه بمانی عزیز، نوبت شما با موفقیت در سامانه نوبت دهی ثبت شد. جهت ویرایش آن می‌توانید به قسمت <span class="text-red-700 hover:text-red-800"><a href="#">نوبت‌های من</a></span> در پروفایل خود مراجعه کنید.</p>
+        <div>
+            <div class="flex flex-col w-3/5 mt-20 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full">
+                <p>روزبه بمانی عزیز، نوبت شما با موفقیت در سامانه نوبت دهی ثبت شد. جهت ویرایش آن می‌توانید به قسمت <span class="text-red-700 hover:text-red-800"><a href="#">نوبت‌های من</a></span> در پروفایل خود مراجعه کنید.</p>
+            </div>
+            <div class="text-center">
+                        <p class="text-blue-normal text-xs border-b border-gray-400 inline-block py-1 mb-3">شماره‌ی پیگیری
+                            <span class="font-bold text-xs text-blue-main mr-4">۹۷۱۳۱۰۹۸</span>
+                        </p>
+            </div>
         </div>
+
+
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

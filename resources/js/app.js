@@ -7,6 +7,10 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import Vue from 'vue'
+import vSelect from 'vue-select'
+
+Vue.use(vSelect)
 
 /**
  * The following block of code may be used to automatically register your

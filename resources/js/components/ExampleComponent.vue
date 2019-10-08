@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-row w-4/5 my-auto">
+    <div class="flex flex-row w-4/5 my-auto" v-if="step >= 1">
       <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
         <p class="text-sm text-blue-normal">مرحله اول</p>
         <p class="font-bold text-blue-main">انتخاب بخش</p>
@@ -14,20 +14,23 @@
           </div>
           <div class="flex-1 text-left">
             <select
-              name
-              id
+              v-model="selected"
+              :disabled="step != 1"
+              v-on:change="selectDoctor()"
               class="bg-white px-2 rounded w-48 irsans focus:outline-none border border-transparent active:border-gray-300"
             >
-              <option value class="bg-white">انتخاب بخش</option>
-              <option value class="bg-white">بخش قلب</option>
+              <option :value="null">انتخاب بخش</option>
+              <option class="bg-white">بخش مغز و اعصاب</option>
+              <option class="bg-white">بخش قلب</option>
             </select>
+            <span>Selected: {{ selected }}</span>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Second part -->
-    <div class="flex flex-row w-4/5 my-auto mt-4">
+    <div class="flex flex-row w-4/5 my-auto mt-4" v-if="step >= 2">
       <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
         <p class="text-sm text-blue-normal">مرحله دوم</p>
         <p class="font-bold text-blue-main">زمان حضور در مطب</p>
@@ -52,7 +55,7 @@
 
     <!-- Third part -->
 
-    <div class="flex flex-row w-4/5 my-auto mt-4">
+    <div class="flex flex-row w-4/5 my-auto mt-4" v-if="step === 3">
       <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
         <p class="text-sm text-blue-normal">مرحله سوم</p>
         <p class="font-bold text-blue-main">تائید اطلاعات</p>
@@ -134,11 +137,13 @@
 
     <div>
       <div
-        class="flex flex-col w-3/5 mt-20 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
+        class="flex flex-col w-3/5 mt-10 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
       >
         <p>
           روزبه بمانی عزیز، نوبت شما با موفقیت در سامانه نوبت دهی ثبت شد. جهت ویرایش آن می‌توانید به قسمت
-          <span class="text-red-700 hover:text-red-800">
+          <span
+            class="text-red-700 hover:text-red-800"
+          >
             <a href="#">نوبت‌های من</a>
           </span> در پروفایل خود مراجعه
           کنید.
@@ -155,9 +160,44 @@
 </template>
 
 <script>
+import vSelect from "vue-select";
+
 export default {
+  data() {
+    return {
+      selected: null,
+      message: null,
+      options: ["قلب", "مغز و اعصاب"],
+      step: 1,
+      registration: {
+        drName: null,
+        email: null,
+        city: null,
+        state: null,
+        numtickets: 0,
+        shirtsize: "XL"
+      }
+    };
+  },
+  methods: {
+    selectDoctor() {
+      this.step++;
+    },
+    prev() {
+      this.step--;
+    },
+    next() {
+      this.step++;
+    },
+    submit() {
+      alert("Submit to blah and show blah and etc.");
+    }
+  },
   mounted() {
     console.log("Component mounted.");
+  },
+  components: {
+    "v-select": vSelect
   }
 };
 </script>

@@ -42,20 +42,21 @@
         <img src="images/nobat.png" class="w-full" alt />
 
         <div class="text-center my-6">
-          <a
-            href="#"
-            class="btn-register text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-10 py-2 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
+          <button
+            @click.prevent="next()"
+            :disabled="step != 2"
+            class="btn-register irsans text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
           >
             انتخاب
             نوبت
-          </a>
+          </button>
         </div>
       </div>
     </div>
 
     <!-- Third part -->
 
-    <div class="flex flex-row w-4/5 my-auto mt-4" v-if="step === 3">
+    <div class="flex flex-row w-4/5 my-auto mt-4" v-if="step >= 3">
       <div class="text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight">
         <p class="text-sm text-blue-normal">مرحله سوم</p>
         <p class="font-bold text-blue-main">تائید اطلاعات</p>
@@ -122,20 +123,21 @@
           </div>
         </div>
         <div class="text-center my-6">
-          <a
-            href="#"
-            class="btn-register text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-10 py-2 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
+          <button
+            @click.prevent="next()"
+            :disabled="step != 3"
+            class="btn-register irsans text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
           >
             ثبت
             نهایی و پرداخت
-          </a>
+          </button>
         </div>
       </div>
     </div>
 
     <!-- Follow-up part -->
 
-    <div>
+    <div v-if="step >= 4">
       <div
         class="flex flex-col w-3/5 mt-10 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
       >

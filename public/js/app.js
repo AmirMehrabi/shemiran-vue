@@ -2001,6 +2001,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -37415,19 +37417,92 @@ var render = function() {
       ? _c("div", { staticClass: "flex flex-row w-4/5 my-auto mt-4" }, [
           _vm._m(2),
           _vm._v(" "),
-          _vm._m(3)
+          _c(
+            "div",
+            {
+              staticClass:
+                "w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
+            },
+            [
+              _c("p", { staticClass: "text-blue-normal" }, [
+                _vm._v(
+                  "لطفا زمان نوبت دلخواه خود را از میان نوبت‌های خالی انتخاب کنید"
+                )
+              ]),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "w-full",
+                attrs: { src: "images/nobat.png", alt: "" }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center my-6" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "btn-register irsans text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
+                    attrs: { disabled: _vm.step != 2 },
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.next()
+                      }
+                    }
+                  },
+                  [_vm._v("\n          انتخاب\n          نوبت\n        ")]
+                )
+              ])
+            ]
+          )
         ])
       : _vm._e(),
     _vm._v(" "),
-    _vm.step === 3
+    _vm.step >= 3
       ? _c("div", { staticClass: "flex flex-row w-4/5 my-auto mt-4" }, [
-          _vm._m(4),
+          _vm._m(3),
           _vm._v(" "),
-          _vm._m(5)
+          _c(
+            "div",
+            {
+              staticClass:
+                "w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
+            },
+            [
+              _c("p", { staticClass: "text-blue-normal mb-4" }, [
+                _vm._v(
+                  "مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست"
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(4),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center my-6" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "btn-register irsans text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
+                    attrs: { disabled: _vm.step != 3 },
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.next()
+                      }
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n          ثبت\n          نهایی و پرداخت\n        "
+                    )
+                  ]
+                )
+              ])
+            ]
+          )
         ])
       : _vm._e(),
     _vm._v(" "),
-    _vm._m(6)
+    _vm.step >= 4 ? _c("div", [_vm._m(5), _vm._v(" "), _vm._m(6)]) : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -37491,42 +37566,6 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
-      },
-      [
-        _c("p", { staticClass: "text-blue-normal" }, [
-          _vm._v(
-            "لطفا زمان نوبت دلخواه خود را از میان نوبت‌های خالی انتخاب کنید"
-          )
-        ]),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "w-full",
-          attrs: { src: "images/nobat.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "text-center my-6" }, [
-          _c(
-            "a",
-            {
-              staticClass:
-                "btn-register text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-10 py-2 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
-              attrs: { href: "#" }
-            },
-            [_vm._v("\n          انتخاب\n          نوبت\n        ")]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
           "text-left w-1/4 py-2 px-4 ml-2 section-line animated bounceInRight"
       },
       [
@@ -37544,164 +37583,152 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex flex-row" }, [
+      _c("div", { staticClass: "flex-1" }, [
+        _c(
+          "p",
+          {
+            staticClass:
+              "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
+          },
+          [
+            _vm._v("\n            تاریخ نوبت\n            "),
+            _c(
+              "span",
+              { staticClass: "font-bold text-base text-blue-main mr-4" },
+              [_vm._v("دوشنبه ۲۵ شهریور ۱۳۹۸")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "p",
+          {
+            staticClass:
+              "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
+          },
+          [
+            _vm._v("\n            ساعت مراجعه\n            "),
+            _c(
+              "span",
+              { staticClass: "font-bold text-base text-blue-main mr-4" },
+              [_vm._v("۱۶:۳۰ بعد از ظهر")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "p",
+          {
+            staticClass:
+              "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
+          },
+          [
+            _vm._v("\n            نام پزشک\n            "),
+            _c(
+              "span",
+              { staticClass: "font-bold text-base text-blue-main mr-4" },
+              [_vm._v("دکتر علیرضا بخشی - قلب و عروق")]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex-1" }, [
+        _c(
+          "p",
+          { staticClass: "text-blue-normal text-sm inline-block py-1 mb-3" },
+          [
+            _vm._v("\n            هزینه‌ی قابل پرداخت\n            "),
+            _c(
+              "span",
+              { staticClass: "font-bold text-base text-blue-main mr-4" },
+              [_vm._v("۲۵۰،۰۰۰ ریال")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "flex items-center w-full" }, [
+          _c(
+            "label",
+            {
+              staticClass: "flex items-center cursor-pointer",
+              attrs: { for: "toogleA" }
+            },
+            [
+              _c(
+                "p",
+                {
+                  staticClass: "text-blue-normal text-sm inline-block py-1 ml-2"
+                },
+                [
+                  _vm._v(
+                    "\n                به صورت اینترنتی پرداخت\n                می‌کنم\n              "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "relative" }, [
+                _c("input", {
+                  staticClass: "hidden",
+                  attrs: { id: "toogleA", type: "checkbox" }
+                }),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass:
+                    "toggle__line w-10 h-4 rounded-full bg-white shadow-blue-lg"
+                }),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass:
+                    "toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
+                })
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "mr-3 text-blue-main text-sm irsans font-bold" },
+                [_vm._v("بله")]
+              )
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "font-bold text-blue-normal text-sm mt-6" }, [
+          _vm._v("توصیه‌های پیش از حضور در مرکز:")
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-gray-600 text-xs" }, [
+          _vm._v(
+            "در زمان مراجعه حتما شماره پیگیری نوبت را به همراه داشته باشید"
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-gray-600 text-xs" }, [
+          _vm._v("در صورت عدم مراجعه در زمان مقرر، نوبت شما لغو خواهد شد")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c(
       "div",
       {
         staticClass:
-          "w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
+          "flex flex-col w-3/5 mt-10 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
       },
       [
-        _c("p", { staticClass: "text-blue-normal mb-4" }, [
+        _c("p", [
           _vm._v(
-            "مشخصات زیر را به دقت بخوانید و مطمئن شوید که همه چیز مورد تائید شماست"
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex flex-row" }, [
-          _c("div", { staticClass: "flex-1" }, [
-            _c(
-              "p",
-              {
-                staticClass:
-                  "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
-              },
-              [
-                _vm._v("\n            تاریخ نوبت\n            "),
-                _c(
-                  "span",
-                  { staticClass: "font-bold text-base text-blue-main mr-4" },
-                  [_vm._v("دوشنبه ۲۵ شهریور ۱۳۹۸")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass:
-                  "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
-              },
-              [
-                _vm._v("\n            ساعت مراجعه\n            "),
-                _c(
-                  "span",
-                  { staticClass: "font-bold text-base text-blue-main mr-4" },
-                  [_vm._v("۱۶:۳۰ بعد از ظهر")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass:
-                  "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
-              },
-              [
-                _vm._v("\n            نام پزشک\n            "),
-                _c(
-                  "span",
-                  { staticClass: "font-bold text-base text-blue-main mr-4" },
-                  [_vm._v("دکتر علیرضا بخشی - قلب و عروق")]
-                )
-              ]
-            )
+            "\n        روزبه بمانی عزیز، نوبت شما با موفقیت در سامانه نوبت دهی ثبت شد. جهت ویرایش آن می‌توانید به قسمت\n        "
+          ),
+          _c("span", { staticClass: "text-red-700 hover:text-red-800" }, [
+            _c("a", { attrs: { href: "#" } }, [_vm._v("نوبت‌های من")])
           ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "flex-1" }, [
-            _c(
-              "p",
-              {
-                staticClass: "text-blue-normal text-sm inline-block py-1 mb-3"
-              },
-              [
-                _vm._v("\n            هزینه‌ی قابل پرداخت\n            "),
-                _c(
-                  "span",
-                  { staticClass: "font-bold text-base text-blue-main mr-4" },
-                  [_vm._v("۲۵۰،۰۰۰ ریال")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "flex items-center w-full" }, [
-              _c(
-                "label",
-                {
-                  staticClass: "flex items-center cursor-pointer",
-                  attrs: { for: "toogleA" }
-                },
-                [
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "text-blue-normal text-sm inline-block py-1 ml-2"
-                    },
-                    [
-                      _vm._v(
-                        "\n                به صورت اینترنتی پرداخت\n                می‌کنم\n              "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "relative" }, [
-                    _c("input", {
-                      staticClass: "hidden",
-                      attrs: { id: "toogleA", type: "checkbox" }
-                    }),
-                    _vm._v(" "),
-                    _c("div", {
-                      staticClass:
-                        "toggle__line w-10 h-4 rounded-full bg-white shadow-blue-lg"
-                    }),
-                    _vm._v(" "),
-                    _c("div", {
-                      staticClass:
-                        "toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "mr-3 text-blue-main text-sm irsans font-bold"
-                    },
-                    [_vm._v("بله")]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "p",
-              { staticClass: "font-bold text-blue-normal text-sm mt-6" },
-              [_vm._v("توصیه‌های پیش از حضور در مرکز:")]
-            ),
-            _vm._v(" "),
-            _c("p", { staticClass: "text-gray-600 text-xs" }, [
-              _vm._v(
-                "در زمان مراجعه حتما شماره پیگیری نوبت را به همراه داشته باشید"
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "text-gray-600 text-xs" }, [
-              _vm._v("در صورت عدم مراجعه در زمان مقرر، نوبت شما لغو خواهد شد")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "text-center my-6" }, [
-          _c(
-            "a",
-            {
-              staticClass:
-                "btn-register text-sm hover:shadow-blue font-bold shadow-blue-lg hover:shadow-blue transition-all px-10 py-2 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
-              attrs: { href: "#" }
-            },
-            [_vm._v("\n          ثبت\n          نهایی و پرداخت\n        ")]
-          )
+          _vm._v(" در پروفایل خود مراجعه\n        کنید.\n      ")
         ])
       ]
     )
@@ -37710,43 +37737,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "text-center" }, [
       _c(
-        "div",
+        "p",
         {
           staticClass:
-            "flex flex-col w-3/5 mt-10 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
+            "text-blue-normal text-xs border-b border-gray-400 inline-block py-1 mb-3"
         },
         [
-          _c("p", [
-            _vm._v(
-              "\n        روزبه بمانی عزیز، نوبت شما با موفقیت در سامانه نوبت دهی ثبت شد. جهت ویرایش آن می‌توانید به قسمت\n        "
-            ),
-            _c("span", { staticClass: "text-red-700 hover:text-red-800" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("نوبت‌های من")])
-            ]),
-            _vm._v(" در پروفایل خود مراجعه\n        کنید.\n      ")
+          _vm._v("\n        شماره‌ی پیگیری\n        "),
+          _c("span", { staticClass: "font-bold text-xs text-blue-main mr-4" }, [
+            _vm._v("۹۷۱۳۱۰۹۸")
           ])
         ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "text-center" }, [
-        _c(
-          "p",
-          {
-            staticClass:
-              "text-blue-normal text-xs border-b border-gray-400 inline-block py-1 mb-3"
-          },
-          [
-            _vm._v("\n        شماره‌ی پیگیری\n        "),
-            _c(
-              "span",
-              { staticClass: "font-bold text-xs text-blue-main mr-4" },
-              [_vm._v("۹۷۱۳۱۰۹۸")]
-            )
-          ]
-        )
-      ])
+      )
     ])
   }
 ]

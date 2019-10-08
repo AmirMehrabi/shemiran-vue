@@ -85,6 +85,7 @@
             {{-- End of navigation --}}
 
 
+            {{-- Doctor's information --}}
             <div class="flex flex-col w-3/4 lg:w-1/4 my-auto mt-20 mx-auto">
                 <div class="flex items-center justify-between text-blue-main text-center  py-1">
                     <img src="{{asset('images/heartbeat.png')}}" alt="">
@@ -111,12 +112,16 @@
                 </div>
             </div>
 
+            {{-- End of doctor's information --}}
+
 
 
         </header>
 
         <!--Container-->
         <div class="container mx-auto">
+
+            {{-- About doctor card --}}
             <div
                 class="flex flex-col shadow-blue w-full lg:w-3/5 my-auto mt-20 mx-auto py-4 px-8 rounded-lg bg-white about-card">
                 <p class="flex text-blue-heading font-bold items-center mb-2">
@@ -139,9 +144,11 @@
 
             </div>
 
+            {{-- End of about doctor card --}}
 
 
 
+            {{-- Some cards about what are we offering --}}
             <div class="flex flex-row justify-between w-full lg:w-3/5 my-auto mt-20 mx-auto ">
 
                 <div class="rect-icon text-center hover:shadow-blue transition-all p-1 rounded w-32">
@@ -185,7 +192,11 @@
 
             </div>
 
+            {{-- End of the offerings card --}}
 
+
+
+            {{-- Reserve doctor heading --}}
             <div class="flex flex-col w-full lg:w-3/5 mt-20 mx-auto">
                 <h2 class="flex items-center text-blue-heading font-bold mb-4">
                     <img src="{{asset('images/about-doctor.png')}}" class="ml-2" alt="">
@@ -194,16 +205,17 @@
 
             </div>
 
+            {{-- End of Reserve doctor heading --}}
 
 
+            {{-- Our vue component for reservation goes here --}}
             <example-component></example-component>
-
-
-
+            {{-- End of component --}}
 
         </div>
 
 
+        {{-- Footer goes here --}}
         <footer class="bottom-footer mt-20  justify-between">
             <div class="container mx-auto">
                 <div class="flex flex-row justify-between">

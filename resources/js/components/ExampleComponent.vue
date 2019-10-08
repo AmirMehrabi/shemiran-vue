@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- First step -->
     <div class="flex flex-row w-4/5 my-auto" v-if="step >= 1">
       <div class="text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight">
         <div v-if="step === 1">
@@ -37,8 +38,9 @@
         </div>
       </div>
     </div>
+    <!-- End of first step -->
 
-    <!-- Second part -->
+    <!-- Second step -->
     <div class="flex flex-row w-4/5 my-auto mt-4" v-if="step >= 2">
       <div class="text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight">
         <div v-if="step === 2">
@@ -72,9 +74,9 @@
         </div>
       </div>
     </div>
+    <!-- End of second step -->
 
-    <!-- Third part -->
-
+    <!-- Third step -->
     <div class="flex flex-row w-4/5 my-auto mt-4" v-if="step >= 3">
       <div class="text-left w-1/4 py-2 px-4 mx-4 section-line animated bounceInRight">
         <div v-if="step === 3">
@@ -171,9 +173,9 @@
         </div>
       </div>
     </div>
+    <!-- End of third step -->
 
     <!-- Follow-up part -->
-
     <div v-if="step >= 4" class="flex flex-row w-3/5 mt-10 mx-auto items-center">
       <img src="images/double-tick.png" class="ml-3" alt />
       <div
@@ -212,15 +214,7 @@ export default {
       onlinePayment: false,
       message: null,
       options: ["قلب", "مغز و اعصاب"],
-      step: 1,
-      registration: {
-        drName: null,
-        email: null,
-        city: null,
-        state: null,
-        numtickets: 0,
-        shirtsize: "XL"
-      }
+      step: 1
     };
   },
   methods: {

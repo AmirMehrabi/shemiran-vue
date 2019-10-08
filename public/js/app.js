@@ -2044,6 +2044,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2052,15 +2054,7 @@ __webpack_require__.r(__webpack_exports__);
       onlinePayment: false,
       message: null,
       options: ["قلب", "مغز و اعصاب"],
-      step: 1,
-      registration: {
-        drName: null,
-        email: null,
-        city: null,
-        state: null,
-        numtickets: 0,
-        shirtsize: "XL"
-      }
+      step: 1
     };
   },
   methods: {

@@ -17,7 +17,8 @@
 
 </head>
 
-<body class="font-sans leading-normal tracking-normal" id="app">
+<body class="font-sans leading-normal tracking-normal">
+    <div id="app">
 
     <!--Header-->
     <header class="top-header">
@@ -321,6 +322,7 @@
 
     <example-component></example-component>
 
+    </div>
     <script type="text/javascript" src="js/app.js"></script>
     <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@4"></script>

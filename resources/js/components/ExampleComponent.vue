@@ -13,7 +13,7 @@
         <p class="font-bold text-blue-main">انتخاب بخش</p>
       </div>
       <div
-        class="w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
+        class="w-5/6 lg:w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
       >
         <div class="flex flex-row items-center">
           <div class="flex-1">
@@ -27,7 +27,7 @@
               v-model="selected"
               :disabled="step != 1"
               v-on:change="selectDoctor()"
-              class="bg-white px-2 rounded w-48 irsans focus:outline-none border border-transparent active:border-gray-300"
+              class="bg-white px-2 rounded w-48 irsans focus:outline-none border border-gray-300 active:border-gray-300"
             >
               <option :value="null">انتخاب بخش</option>
               <option class="bg-white">بخش مغز و اعصاب</option>
@@ -63,8 +63,9 @@
           <button
             @click.prevent="next()"
             :disabled="step != 2"
-            class="btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
+            class="flex items-center mx-auto btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-4 md:px-10 lg:px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
           >
+            <img src="images/cursor.png" class="ml-4" alt />
             انتخاب
             نوبت
           </button>
@@ -98,9 +99,7 @@
               <img src="images/calendar.png" class="bg-white w-4 ml-2" alt />
               <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1">
                 تاریخ نوبت
-                <span
-                  class="font-bold text-base text-blue-main mr-4"
-                >دوشنبه ۲۲ شهریور ۱۳۹۸</span>
+                <span class="font-bold text-blue-main mr-4">دوشنبه ۲۲ شهریور ۱۳۹۸</span>
               </p>
             </div>
 
@@ -108,7 +107,7 @@
               <img src="images/time.png" class="bg-white w-4 ml-2" alt />
               <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1">
                 ساعت مراجعه
-                <span class="font-bold text-base text-blue-main mr-4">۱۶:۳۰ بعد از ظهر</span>
+                <span class="font-bold text-blue-main mr-4">۱۶:۳۰ بعد از ظهر</span>
               </p>
             </div>
 
@@ -117,7 +116,7 @@
               <p class="text-blue-normal text-sm border-b border-gray-400 inline-block py-1">
                 نام پزشک
                 <span
-                  class="font-bold text-base text-blue-main mr-4"
+                  class="font-bold text-blue-main mr-4"
                 >دکتر علیرضا بخشی / {{ selected }}</span>
               </p>
             </div>
@@ -125,7 +124,7 @@
           <div class="flex-1">
             <p class="text-blue-normal text-sm inline-block py-1 mb-3">
               هزینه‌ی قابل پرداخت
-              <span class="font-bold text-base text-blue-main mr-4">۲۵۰،۰۰۰ ریال</span>
+              <span class="font-bold text-blue-main mr-4">۲۵۰،۰۰۰ ریال</span>
             </p>
 
             <div class="flex items-center w-full">
@@ -138,16 +137,17 @@
                 <!-- toggle -->
                 <div class="relative">
                   <!-- input -->
-                  <input id="toogleA" type="checkbox" class="hidden" />
+                  <input id="toogleA" v-model="onlinePayment" type="checkbox" class="hidden" />
                   <!-- line -->
-                  <div class="toggle__line w-10 h-4 rounded-full bg-white shadow-blue-lg"></div>
+                  <div class="toggle__line w-10 h-4 rounded-full bg-white shadow-blue-main"></div>
                   <!-- dot -->
                   <div
                     class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
                   ></div>
                 </div>
                 <!-- label -->
-                <div class="mr-3 text-blue-main text-sm irsans font-bold">بله</div>
+                <div v-if="onlinePayment" class="mr-3 text-blue-main text-sm irsans font-bold">بله</div>
+                <div v-else class="mr-3 text-red-600 text-sm irsans font-bold">خیر</div>
               </label>
             </div>
 
@@ -162,8 +162,9 @@
           <button
             @click.prevent="next()"
             :disabled="step != 3"
-            class="btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
+            class="flex items-center mx-auto btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-4 md:px-10 lg:px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0"
           >
+            <img src="images/checked.png" class="ml-4" alt />
             ثبت
             نهایی و پرداخت
           </button>
@@ -173,9 +174,10 @@
 
     <!-- Follow-up part -->
 
-    <div v-if="step >= 4">
+    <div v-if="step >= 4" class="flex flex-row w-3/5 mt-10 mx-auto items-center">
+      <img src="images/double-tick.png" class="ml-3" alt />
       <div
-        class="flex flex-col w-3/5 mt-10 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
+        class="bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
       >
         <p>
           روزبه بمانی عزیز، نوبت شما با موفقیت در سامانه نوبت دهی ثبت شد. جهت ویرایش آن می‌توانید به قسمت
@@ -187,6 +189,9 @@
           کنید.
         </p>
       </div>
+    </div>
+
+    <div v-if="step >= 4" class="flex flex-col w-3/5 mx-auto items-center">
       <div class="text-center">
         <p class="text-blue-normal text-xs border-b border-gray-400 inline-block py-1 mb-3">
           شماره‌ی پیگیری
@@ -204,6 +209,7 @@ export default {
   data() {
     return {
       selected: null,
+      onlinePayment: false,
       message: null,
       options: ["قلب", "مغز و اعصاب"],
       step: 1,

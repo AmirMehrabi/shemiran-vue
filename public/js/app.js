@@ -2039,11 +2039,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       selected: null,
+      onlinePayment: false,
       message: null,
       options: ["قلب", "مغز و اعصاب"],
       step: 1,
@@ -37416,7 +37422,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
+                "w-5/6 lg:w-3/4 border-2 border-blue-light my-auto p-4 rounded-lg bg-white animated bounceInLeft"
             },
             [
               _c("div", { staticClass: "flex flex-row items-center" }, [
@@ -37435,7 +37441,7 @@ var render = function() {
                         }
                       ],
                       staticClass:
-                        "bg-white px-2 rounded w-48 irsans focus:outline-none border border-transparent active:border-gray-300",
+                        "bg-white px-2 rounded w-48 irsans focus:outline-none border border-gray-300 active:border-gray-300",
                       attrs: { disabled: _vm.step != 1 },
                       on: {
                         change: [
@@ -37531,7 +37537,7 @@ var render = function() {
                   "button",
                   {
                     staticClass:
-                      "btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
+                      "flex items-center mx-auto btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-4 md:px-10 lg:px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
                     attrs: { disabled: _vm.step != 2 },
                     on: {
                       click: function($event) {
@@ -37540,7 +37546,13 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("\n          انتخاب\n          نوبت\n        ")]
+                  [
+                    _c("img", {
+                      staticClass: "ml-4",
+                      attrs: { src: "images/cursor.png", alt: "" }
+                    }),
+                    _vm._v("\n          انتخاب\n          نوبت\n        ")
+                  ]
                 )
               ])
             ]
@@ -37612,10 +37624,7 @@ var render = function() {
                         _vm._v("\n              نام پزشک\n              "),
                         _c(
                           "span",
-                          {
-                            staticClass:
-                              "font-bold text-base text-blue-main mr-4"
-                          },
+                          { staticClass: "font-bold text-blue-main mr-4" },
                           [_vm._v("دکتر علیرضا بخشی / " + _vm._s(_vm.selected))]
                         )
                       ]
@@ -37623,7 +37632,121 @@ var render = function() {
                   ])
                 ]),
                 _vm._v(" "),
-                _vm._m(5)
+                _c("div", { staticClass: "flex-1" }, [
+                  _vm._m(5),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex items-center w-full" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "flex items-center cursor-pointer",
+                        attrs: { for: "toogleA" }
+                      },
+                      [
+                        _c(
+                          "p",
+                          {
+                            staticClass:
+                              "text-blue-normal text-sm inline-block py-1 ml-2"
+                          },
+                          [
+                            _vm._v(
+                              "\n                به صورت اینترنتی پرداخت\n                می‌کنم\n              "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "relative" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.onlinePayment,
+                                expression: "onlinePayment"
+                              }
+                            ],
+                            staticClass: "hidden",
+                            attrs: { id: "toogleA", type: "checkbox" },
+                            domProps: {
+                              checked: Array.isArray(_vm.onlinePayment)
+                                ? _vm._i(_vm.onlinePayment, null) > -1
+                                : _vm.onlinePayment
+                            },
+                            on: {
+                              change: function($event) {
+                                var $$a = _vm.onlinePayment,
+                                  $$el = $event.target,
+                                  $$c = $$el.checked ? true : false
+                                if (Array.isArray($$a)) {
+                                  var $$v = null,
+                                    $$i = _vm._i($$a, $$v)
+                                  if ($$el.checked) {
+                                    $$i < 0 &&
+                                      (_vm.onlinePayment = $$a.concat([$$v]))
+                                  } else {
+                                    $$i > -1 &&
+                                      (_vm.onlinePayment = $$a
+                                        .slice(0, $$i)
+                                        .concat($$a.slice($$i + 1)))
+                                  }
+                                } else {
+                                  _vm.onlinePayment = $$c
+                                }
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("div", {
+                            staticClass:
+                              "toggle__line w-10 h-4 rounded-full bg-white shadow-blue-main"
+                          }),
+                          _vm._v(" "),
+                          _c("div", {
+                            staticClass:
+                              "toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _vm.onlinePayment
+                          ? _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "mr-3 text-blue-main text-sm irsans font-bold"
+                              },
+                              [_vm._v("بله")]
+                            )
+                          : _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "mr-3 text-red-600 text-sm irsans font-bold"
+                              },
+                              [_vm._v("خیر")]
+                            )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "font-bold text-blue-normal text-sm mt-6" },
+                    [_vm._v("توصیه‌های پیش از حضور در مرکز:")]
+                  ),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "text-gray-600 text-xs" }, [
+                    _vm._v(
+                      "در زمان مراجعه حتما شماره پیگیری نوبت را به همراه داشته باشید"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "text-gray-600 text-xs" }, [
+                    _vm._v(
+                      "در صورت عدم مراجعه در زمان مقرر، نوبت شما لغو خواهد شد"
+                    )
+                  ])
+                ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "text-center my-6" }, [
@@ -37631,7 +37754,7 @@ var render = function() {
                   "button",
                   {
                     staticClass:
-                      "btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
+                      "flex items-center mx-auto btn-step irsans text-sm hover:shadow-blue font-bold transition-all px-4 md:px-10 lg:px-20 py-3 leading-none text-white bg-blue-500 border-blue-500 rounded-large text-white rounded-lg hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0",
                     attrs: { disabled: _vm.step != 3 },
                     on: {
                       click: function($event) {
@@ -37641,6 +37764,10 @@ var render = function() {
                     }
                   },
                   [
+                    _c("img", {
+                      staticClass: "ml-4",
+                      attrs: { src: "images/checked.png", alt: "" }
+                    }),
                     _vm._v(
                       "\n          ثبت\n          نهایی و پرداخت\n        "
                     )
@@ -37652,7 +37779,26 @@ var render = function() {
         ])
       : _vm._e(),
     _vm._v(" "),
-    _vm.step >= 4 ? _c("div", [_vm._m(6), _vm._v(" "), _vm._m(7)]) : _vm._e()
+    _vm.step >= 4
+      ? _c(
+          "div",
+          { staticClass: "flex flex-row w-3/5 mt-10 mx-auto items-center" },
+          [
+            _c("img", {
+              staticClass: "ml-3",
+              attrs: { src: "images/double-tick.png", alt: "" }
+            }),
+            _vm._v(" "),
+            _vm._m(6)
+          ]
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.step >= 4
+      ? _c("div", { staticClass: "flex flex-col w-3/5 mx-auto items-center" }, [
+          _vm._m(7)
+        ])
+      : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -37718,11 +37864,9 @@ var staticRenderFns = [
         },
         [
           _vm._v("\n              تاریخ نوبت\n              "),
-          _c(
-            "span",
-            { staticClass: "font-bold text-base text-blue-main mr-4" },
-            [_vm._v("دوشنبه ۲۲ شهریور ۱۳۹۸")]
-          )
+          _c("span", { staticClass: "font-bold text-blue-main mr-4" }, [
+            _vm._v("دوشنبه ۲۲ شهریور ۱۳۹۸")
+          ])
         ]
       )
     ])
@@ -37745,11 +37889,9 @@ var staticRenderFns = [
         },
         [
           _vm._v("\n              ساعت مراجعه\n              "),
-          _c(
-            "span",
-            { staticClass: "font-bold text-base text-blue-main mr-4" },
-            [_vm._v("۱۶:۳۰ بعد از ظهر")]
-          )
+          _c("span", { staticClass: "font-bold text-blue-main mr-4" }, [
+            _vm._v("۱۶:۳۰ بعد از ظهر")
+          ])
         ]
       )
     ])
@@ -37758,78 +37900,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex-1" }, [
-      _c(
-        "p",
-        { staticClass: "text-blue-normal text-sm inline-block py-1 mb-3" },
-        [
-          _vm._v("\n            هزینه‌ی قابل پرداخت\n            "),
-          _c(
-            "span",
-            { staticClass: "font-bold text-base text-blue-main mr-4" },
-            [_vm._v("۲۵۰،۰۰۰ ریال")]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "flex items-center w-full" }, [
-        _c(
-          "label",
-          {
-            staticClass: "flex items-center cursor-pointer",
-            attrs: { for: "toogleA" }
-          },
-          [
-            _c(
-              "p",
-              {
-                staticClass: "text-blue-normal text-sm inline-block py-1 ml-2"
-              },
-              [
-                _vm._v(
-                  "\n                به صورت اینترنتی پرداخت\n                می‌کنم\n              "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "relative" }, [
-              _c("input", {
-                staticClass: "hidden",
-                attrs: { id: "toogleA", type: "checkbox" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass:
-                  "toggle__line w-10 h-4 rounded-full bg-white shadow-blue-lg"
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass:
-                  "toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-              })
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "mr-3 text-blue-main text-sm irsans font-bold" },
-              [_vm._v("بله")]
-            )
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "font-bold text-blue-normal text-sm mt-6" }, [
-        _vm._v("توصیه‌های پیش از حضور در مرکز:")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-gray-600 text-xs" }, [
-        _vm._v("در زمان مراجعه حتما شماره پیگیری نوبت را به همراه داشته باشید")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-gray-600 text-xs" }, [
-        _vm._v("در صورت عدم مراجعه در زمان مقرر، نوبت شما لغو خواهد شد")
-      ])
-    ])
+    return _c(
+      "p",
+      { staticClass: "text-blue-normal text-sm inline-block py-1 mb-3" },
+      [
+        _vm._v("\n            هزینه‌ی قابل پرداخت\n            "),
+        _c("span", { staticClass: "font-bold text-blue-main mr-4" }, [
+          _vm._v("۲۵۰،۰۰۰ ریال")
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -37839,7 +37919,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "flex flex-col w-3/5 mt-10 mx-auto bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
+          "bg-blue-light irsans font-bold text-blue-main border-r-4 border-blue-normal text-center p-1 text-xs rounded-l-full"
       },
       [
         _c("p", [

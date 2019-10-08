@@ -10095,6 +10095,10 @@ h6 {
   box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
 }
 
+.shadow-blue-main {
+  box-shadow: 0px 2px 15px 0px #9fcdde;
+}
+
 .hover\:shadow:hover {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -10135,6 +10139,10 @@ h6 {
   box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
 }
 
+.hover\:shadow-blue-main:hover {
+  box-shadow: 0px 2px 15px 0px #9fcdde;
+}
+
 .focus\:shadow:focus {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -10173,6 +10181,10 @@ h6 {
 
 .focus\:shadow-blue-lg:focus {
   box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+}
+
+.focus\:shadow-blue-main:focus {
+  box-shadow: 0px 2px 15px 0px #9fcdde;
 }
 
 .fill-current {
@@ -11988,6 +12000,14 @@ input:checked ~ .toggle__dot {
   background-repeat: no-repeat;
   background-position: 3%, bottom;
   padding-bottom: 7rem;
+  /* background-size: initial; */
+}
+
+.bottom-footer {
+  background: url(../images/bg/header-repeat.png), url(../images/bg/footer-curve.png);
+  background-repeat: no-repeat;
+  background-position: 3%, top;
+  padding-top: 5rem;
   /* background-size: initial; */
 }
 
@@ -21432,6 +21452,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
+  .sm\:shadow-blue-main {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
+  }
+
   .sm\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -21472,6 +21496,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
+  .sm\:hover\:shadow-blue-main:hover {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
+  }
+
   .sm\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -21510,6 +21538,10 @@ input:checked ~ .toggle__dot {
 
   .sm\:focus\:shadow-blue-lg:focus {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
+  .sm\:focus\:shadow-blue-main:focus {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
   }
 
   .sm\:fill-current {
@@ -32684,6 +32716,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
+  .md\:shadow-blue-main {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
+  }
+
   .md\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -32724,6 +32760,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
+  .md\:hover\:shadow-blue-main:hover {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
+  }
+
   .md\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -32762,6 +32802,10 @@ input:checked ~ .toggle__dot {
 
   .md\:focus\:shadow-blue-lg:focus {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
+  .md\:focus\:shadow-blue-main:focus {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
   }
 
   .md\:fill-current {
@@ -43936,6 +43980,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
+  .lg\:shadow-blue-main {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
+  }
+
   .lg\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -43976,6 +44024,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
+  .lg\:hover\:shadow-blue-main:hover {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
+  }
+
   .lg\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -44014,6 +44066,10 @@ input:checked ~ .toggle__dot {
 
   .lg\:focus\:shadow-blue-lg:focus {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
+  .lg\:focus\:shadow-blue-main:focus {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
   }
 
   .lg\:fill-current {
@@ -55188,6 +55244,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
+  .xl\:shadow-blue-main {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
+  }
+
   .xl\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -55228,6 +55288,10 @@ input:checked ~ .toggle__dot {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
   }
 
+  .xl\:hover\:shadow-blue-main:hover {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
+  }
+
   .xl\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -55266,6 +55330,10 @@ input:checked ~ .toggle__dot {
 
   .xl\:focus\:shadow-blue-lg:focus {
     box-shadow: 0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255);
+  }
+
+  .xl\:focus\:shadow-blue-main:focus {
+    box-shadow: 0px 2px 15px 0px #9fcdde;
   }
 
   .xl\:fill-current {

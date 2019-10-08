@@ -55,7 +55,8 @@ module.exports = {
             },
             boxShadow: {
                 'blue': '0 20px 25px -5px rgba(220, 246, 255, 0.51), 0 10px 10px -5px rgb(220, 246, 255)',
-                'blue-lg': '0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255)'
+                'blue-lg': '0 10px 15px -3px rgb(220, 246, 255), 0 4px 6px -2px rgb(220, 246, 255)',
+                'blue-main': '0px 2px 15px 0px #9fcdde',
             }
         }
     },

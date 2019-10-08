@@ -23,7 +23,6 @@
               <option class="bg-white">بخش مغز و اعصاب</option>
               <option class="bg-white">بخش قلب</option>
             </select>
-            <span>Selected: {{ selected }}</span>
           </div>
         </div>
       </div>

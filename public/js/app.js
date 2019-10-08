@@ -37474,7 +37474,33 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._m(4),
+              _c("div", { staticClass: "flex flex-row" }, [
+                _c("div", { staticClass: "flex-1" }, [
+                  _vm._m(4),
+                  _vm._v(" "),
+                  _vm._m(5),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
+                    },
+                    [
+                      _vm._v("\n            نام پزشک\n            "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "font-bold text-base text-blue-main mr-4"
+                        },
+                        [_vm._v("دکتر علیرضا بخشی - " + _vm._s(_vm.selected))]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(6)
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "text-center my-6" }, [
                 _c(
@@ -37502,7 +37528,7 @@ var render = function() {
         ])
       : _vm._e(),
     _vm._v(" "),
-    _vm.step >= 4 ? _c("div", [_vm._m(5), _vm._v(" "), _vm._m(6)]) : _vm._e()
+    _vm.step >= 4 ? _c("div", [_vm._m(7), _vm._v(" "), _vm._m(8)]) : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -37583,130 +37609,112 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex flex-row" }, [
-      _c("div", { staticClass: "flex-1" }, [
+    return _c(
+      "p",
+      {
+        staticClass:
+          "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
+      },
+      [
+        _vm._v("\n            تاریخ نوبت\n            "),
+        _c("span", { staticClass: "font-bold text-base text-blue-main mr-4" }, [
+          _vm._v("دوشنبه ۲۵ شهریور ۱۳۹۸")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "p",
+      {
+        staticClass:
+          "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
+      },
+      [
+        _vm._v("\n            ساعت مراجعه\n            "),
+        _c("span", { staticClass: "font-bold text-base text-blue-main mr-4" }, [
+          _vm._v("۱۶:۳۰ بعد از ظهر")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex-1" }, [
+      _c(
+        "p",
+        { staticClass: "text-blue-normal text-sm inline-block py-1 mb-3" },
+        [
+          _vm._v("\n            هزینه‌ی قابل پرداخت\n            "),
+          _c(
+            "span",
+            { staticClass: "font-bold text-base text-blue-main mr-4" },
+            [_vm._v("۲۵۰،۰۰۰ ریال")]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex items-center w-full" }, [
         _c(
-          "p",
+          "label",
           {
-            staticClass:
-              "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
+            staticClass: "flex items-center cursor-pointer",
+            attrs: { for: "toogleA" }
           },
           [
-            _vm._v("\n            تاریخ نوبت\n            "),
             _c(
-              "span",
-              { staticClass: "font-bold text-base text-blue-main mr-4" },
-              [_vm._v("دوشنبه ۲۵ شهریور ۱۳۹۸")]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "p",
-          {
-            staticClass:
-              "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
-          },
-          [
-            _vm._v("\n            ساعت مراجعه\n            "),
+              "p",
+              {
+                staticClass: "text-blue-normal text-sm inline-block py-1 ml-2"
+              },
+              [
+                _vm._v(
+                  "\n                به صورت اینترنتی پرداخت\n                می‌کنم\n              "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "relative" }, [
+              _c("input", {
+                staticClass: "hidden",
+                attrs: { id: "toogleA", type: "checkbox" }
+              }),
+              _vm._v(" "),
+              _c("div", {
+                staticClass:
+                  "toggle__line w-10 h-4 rounded-full bg-white shadow-blue-lg"
+              }),
+              _vm._v(" "),
+              _c("div", {
+                staticClass:
+                  "toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
+              })
+            ]),
+            _vm._v(" "),
             _c(
-              "span",
-              { staticClass: "font-bold text-base text-blue-main mr-4" },
-              [_vm._v("۱۶:۳۰ بعد از ظهر")]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "p",
-          {
-            staticClass:
-              "text-blue-normal text-sm border-b border-gray-400 inline-block py-1 mb-3"
-          },
-          [
-            _vm._v("\n            نام پزشک\n            "),
-            _c(
-              "span",
-              { staticClass: "font-bold text-base text-blue-main mr-4" },
-              [_vm._v("دکتر علیرضا بخشی - قلب و عروق")]
+              "div",
+              { staticClass: "mr-3 text-blue-main text-sm irsans font-bold" },
+              [_vm._v("بله")]
             )
           ]
         )
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "flex-1" }, [
-        _c(
-          "p",
-          { staticClass: "text-blue-normal text-sm inline-block py-1 mb-3" },
-          [
-            _vm._v("\n            هزینه‌ی قابل پرداخت\n            "),
-            _c(
-              "span",
-              { staticClass: "font-bold text-base text-blue-main mr-4" },
-              [_vm._v("۲۵۰،۰۰۰ ریال")]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex items-center w-full" }, [
-          _c(
-            "label",
-            {
-              staticClass: "flex items-center cursor-pointer",
-              attrs: { for: "toogleA" }
-            },
-            [
-              _c(
-                "p",
-                {
-                  staticClass: "text-blue-normal text-sm inline-block py-1 ml-2"
-                },
-                [
-                  _vm._v(
-                    "\n                به صورت اینترنتی پرداخت\n                می‌کنم\n              "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "relative" }, [
-                _c("input", {
-                  staticClass: "hidden",
-                  attrs: { id: "toogleA", type: "checkbox" }
-                }),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass:
-                    "toggle__line w-10 h-4 rounded-full bg-white shadow-blue-lg"
-                }),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass:
-                    "toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-                })
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "mr-3 text-blue-main text-sm irsans font-bold" },
-                [_vm._v("بله")]
-              )
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "font-bold text-blue-normal text-sm mt-6" }, [
-          _vm._v("توصیه‌های پیش از حضور در مرکز:")
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "text-gray-600 text-xs" }, [
-          _vm._v(
-            "در زمان مراجعه حتما شماره پیگیری نوبت را به همراه داشته باشید"
-          )
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "text-gray-600 text-xs" }, [
-          _vm._v("در صورت عدم مراجعه در زمان مقرر، نوبت شما لغو خواهد شد")
-        ])
+      _c("p", { staticClass: "font-bold text-blue-normal text-sm mt-6" }, [
+        _vm._v("توصیه‌های پیش از حضور در مرکز:")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-gray-600 text-xs" }, [
+        _vm._v("در زمان مراجعه حتما شماره پیگیری نوبت را به همراه داشته باشید")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-gray-600 text-xs" }, [
+        _vm._v("در صورت عدم مراجعه در زمان مقرر، نوبت شما لغو خواهد شد")
       ])
     ])
   },

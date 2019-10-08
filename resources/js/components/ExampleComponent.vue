@@ -83,7 +83,7 @@
               نام پزشک
               <span
                 class="font-bold text-base text-blue-main mr-4"
-              >دکتر علیرضا بخشی - قلب و عروق</span>
+              >دکتر علیرضا بخشی - {{ selected }}</span>
             </p>
           </div>
           <div class="flex-1">
